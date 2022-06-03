@@ -1,0 +1,5 @@
+name: TestPlugin
+main: indi.dmzz.testpulgin.TestPlugin
+version: 0.1.1
+
+

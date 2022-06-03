@@ -1,0 +1,7 @@
+
+# 这是一个配置文件,真的什么都没有。
+
+# 语言
+PleaseEnterASubcommand: "请输入次指令!"
+ConfigurationFileReloaded : "已重新载入配置文件"
+SorryTheMenuYouEnteredDoesNotExist: "对不起, 您输入的菜单不存在!"
