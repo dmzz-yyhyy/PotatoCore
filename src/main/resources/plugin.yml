@@ -4,3 +4,16 @@ main: io.yukonisen.potatocore.PotatoCore
 api-version: 1.18
 authors: [ yukonisen ]
 description: PotatoCore for Spigot
+softdepend:
+  - MiraiMC
+commands:
+  ptb:
+    description: "PotatoBot command"
+permissions:
+  potato.*:
+    description: "PotatoCore permission group"
+    default: false
+    children:
+      catsero.admin:
+        description: "PotatoCore admin permission"
+        default: op
