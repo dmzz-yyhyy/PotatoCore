@@ -1,0 +1,18 @@
+# Configuration for PotatoBot
+
+botcfg:
+
+  # deprecated
+
+  group: 123456
+  bot: 123456
+  op: 123456
+
+messages:
+
+  # messages when player join or quit server
+  player-jq:
+
+    format:
+      join: "%player% 连接至服务器"
+      quit: "%player% 断开连接"
