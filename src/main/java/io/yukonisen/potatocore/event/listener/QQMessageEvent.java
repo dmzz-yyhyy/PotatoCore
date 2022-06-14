@@ -17,8 +17,12 @@ public class QQMessageEvent implements Listener {
         String[] args = msg.split(" ");
 
         if (msg.startsWith("#") && event.getGroupID() == Config.group) {
-            String ForwardMsg = msg.substring(1);
-            Bukkit.broadcastMessage(event.getSenderNameCard()+" > "+ForwardMsg);
+            String forwardMsg = msg.substring(1);
+            String sender = event.getSenderNameCard();
+            if (sender == null) {
+                sender = String.valueOf(event.getSenderID());
+            }
+            Bukkit.broadcastMessage(sender + " > " + forwardMsg);
         }
 
         if (msg.equals("!#ping") && event.getGroupID() == Config.group) {

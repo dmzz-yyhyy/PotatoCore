@@ -14,6 +14,6 @@ permissions:
     description: "PotatoCore permission group"
     default: false
     children:
-      catsero.admin:
+      potato.admin:
         description: "PotatoCore admin permission"
         default: op
