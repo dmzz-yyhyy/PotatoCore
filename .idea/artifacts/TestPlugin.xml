@@ -1,9 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" build-on-make="true" name="TestPlugin">
-    <output-path>$PROJECT_DIR$/../QQRobot/lib/plugins</output-path>
-    <root id="archive" name="TestPlugin.jar">
-      <element id="module-output" name="TestPlugin" />
-      <element id="file-copy" path="$PROJECT_DIR$/../QQRobot/src/META-INF/MANIFEST.MF" />
-    </root>
-  </artifact>
-</component>
