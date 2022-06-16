@@ -1,9 +1,14 @@
 package io.yukonisen.potatocore;
 
 import io.yukonisen.potatocore.event.command.ptb;
+import io.yukonisen.potatocore.event.listener.OnGameChatEvent;
+import io.yukonisen.potatocore.event.listener.OnPlayerJoinOrQuit;
+import io.yukonisen.potatocore.event.listener.OnQQMessageEvent;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
+
+import static org.bukkit.Bukkit.getVersion;
 
 public class PotatoCore extends JavaPlugin {
 
@@ -24,9 +29,9 @@ public class PotatoCore extends JavaPlugin {
         Bukkit.getPluginCommand("ptb").setExecutor(new ptb());
 
         System.out.println("Registering event -> Listener");
-        getServer().getPluginManager().registerEvents(new io.yukonisen.potatocore.event.listener.OnNewChatEvent(), this);
-        getServer().getPluginManager().registerEvents(new io.yukonisen.potatocore.event.listener.OnPlayerJoinOrQuit(), this);
-        getServer().getPluginManager().registerEvents(new io.yukonisen.potatocore.event.listener.QQMessageEvent(), this);
+        getServer().getPluginManager().registerEvents(new OnGameChatEvent(), this);
+        getServer().getPluginManager().registerEvents(new OnPlayerJoinOrQuit(), this);
+        getServer().getPluginManager().registerEvents(new OnQQMessageEvent(), this);
 
         System.out.println("PotatoCore ready.");
     }
