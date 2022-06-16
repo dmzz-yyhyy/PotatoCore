@@ -11,7 +11,7 @@ public class ptb implements CommandExecutor {
 
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
-        //reload command
+        // reload command
         if (args[0].equalsIgnoreCase("reload")) {
             Config.INSTANCE.getPlugin().reloadConfig();
             sender.sendMessage(ChatColor.translateAlternateColorCodes('&', Config.INSTANCE.getPrefix_MC() + "&aConfig files reloaded"));
