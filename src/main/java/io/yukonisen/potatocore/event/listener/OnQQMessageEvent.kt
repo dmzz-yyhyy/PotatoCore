@@ -14,7 +14,7 @@ class OnQQMessageEvent : Listener {
         if (msg.startsWith("#") && event.groupID == Config.group.toLong()) {
             val forwardMsg = msg.substring(1)
             var sender = event.senderNameCard
-            if (sender == null) {
+            if (sender.isNullOrEmpty()) {
                 sender = event.senderID.toString()
             }
             Bukkit.broadcastMessage("$sender > $forwardMsg")

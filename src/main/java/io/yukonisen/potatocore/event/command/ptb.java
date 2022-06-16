@@ -5,10 +5,7 @@ import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
-import org.bukkit.plugin.PluginDescriptionFile;
 import org.jetbrains.annotations.NotNull;
-
-import static org.bukkit.Bukkit.getVersion;
 
 public class ptb implements CommandExecutor {
 
