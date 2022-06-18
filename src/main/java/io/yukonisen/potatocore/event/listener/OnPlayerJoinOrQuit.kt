@@ -14,7 +14,7 @@ class OnPlayerJoinOrQuit : Listener {
         val id = pljev.player.name
         var joinmsg = PTBConfig.getString("messages.player-jq.format.join")
         joinmsg = joinmsg.replace("%player%", id)
-        MiraiBot.getBot(Config.bot).getGroup(Config.group.toLong()).sendMessageMirai(joinmsg)
+        MiraiBot.getBot(Config.bot.toLong()).getGroup(Config.group.toLong()).sendMessageMirai(joinmsg)
     }
 
     @EventHandler
@@ -22,6 +22,6 @@ class OnPlayerJoinOrQuit : Listener {
         val id = plqev.player.name
         var quitmsg = PTBConfig.getString("messages.player-jq.format.quit")
         quitmsg = quitmsg.replace("%player%", id)
-        MiraiBot.getBot(Config.bot).getGroup(Config.group.toLong()).sendMessageMirai(quitmsg)
+        MiraiBot.getBot(Config.bot.toLong()).getGroup(Config.group.toLong()).sendMessageMirai(quitmsg)
     }
 }
