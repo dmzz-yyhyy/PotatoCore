@@ -21,7 +21,7 @@ class OnQQMessageEvent : Listener {
         }
         if (msg == "!#ping" && event.groupID == Config.group.toLong()) {
             val version = Bukkit.getVersion()
-            MiraiBot.getBot(Config.bot).getGroup(Config.group.toLong()).sendMessageMirai("PTB Running, version $version")
+            MiraiBot.getBot(Config.bot.toLong()).getGroup(Config.group.toLong()).sendMessageMirai("PTB running on $version")
         }
     }
 }

@@ -1,4 +1,4 @@
-package io.yukonisen.potatocore.event.listener;
+package io.yukonisen.potatocore.event.listener
 
 import io.yukonisen.potatocore.util.Config
 import me.dreamvoid.miraimc.api.MiraiBot
@@ -13,7 +13,7 @@ class OnGameChatEvent : Listener {
         val msg = event.message
         if (msg.startsWith("#")){
             val forwardMsg: String = msg.substring(1)
-            MiraiBot.getBot(Config.bot).getGroup(Config.group.toLong()).sendMessageMirai(
+            MiraiBot.getBot(Config.bot.toLong()).getGroup(Config.group.toLong()).sendMessageMirai(
                 event.player.displayName + ": " + forwardMsg
             )
         }
