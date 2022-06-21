@@ -3,6 +3,7 @@ package io.yukonisen.potatocore;
 import io.yukonisen.potatocore.event.listener.OnGameChatEvent;
 import io.yukonisen.potatocore.event.listener.OnPlayerJoinOrQuit;
 import io.yukonisen.potatocore.event.listener.OnQQMessageEvent;
+import io.yukonisen.potatocore.util.Config;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class PotatoCore extends JavaPlugin {
@@ -24,6 +25,9 @@ public class PotatoCore extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new OnQQMessageEvent(), this);
 
         this.getLogger().info("PotatoCore ready.");
+        this.getLogger().info("" +
+                "Current qqbot: "+ Config.INSTANCE.getQqbot()+", qqgroup: "
+                + Config.INSTANCE.getQqgroup());
     }
 
     @Override
