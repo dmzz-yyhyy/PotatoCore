@@ -13,7 +13,7 @@ class OnGameChatEvent : Listener {
         val msg = event.message
         if (msg.startsWith("#")){
             val forwardMsg: String = msg.substring(1)
-            MiraiBot.getBot(Config.bot.toLong()).getGroup(Config.group.toLong()).sendMessageMirai(
+            MiraiBot.getBot(Config.qqbot).getGroup(Config.qqgroup).sendMessageMirai(
                 event.player.displayName + ": " + forwardMsg
             )
         }
