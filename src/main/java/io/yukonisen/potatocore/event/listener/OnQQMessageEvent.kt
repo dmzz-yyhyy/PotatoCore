@@ -7,7 +7,7 @@ import org.bukkit.Bukkit
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
 
-class OnQQMessageEvent() : Listener {
+class OnQQMessageEvent : Listener {
     @EventHandler
     fun onGroupMessage(event: MiraiGroupMessageEvent) {
         val msg = event.message
@@ -15,7 +15,7 @@ class OnQQMessageEvent() : Listener {
         val qqid = event.senderID.toString()
         if (msg.startsWith("#") && event.groupID == Config.qqgroup) {
             val forwardMsg = msg.substring(1)
-            sender = if (namecard.isNullOrEmpty()) qqid else namecard
+            val sender = if (namecard.isNullOrEmpty()) qqid else namecard
             Bukkit.broadcastMessage("$sender > $forwardMsg")
         }
         if (msg == "!#ping" && event.groupID == Config.qqgroup) {
