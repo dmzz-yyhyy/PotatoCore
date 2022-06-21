@@ -1,9 +1,9 @@
 # Configuration file for PotatoCore
 # by yukonisen#QwQ
 
-# 通用格式
-format-list:
-  # 插件消息前缀
+format:
+
   prefix:
+    console: "[PotatoCore]"
     to-mc: "&aPotatoCore &7> "
     to-qq: "[Core]"

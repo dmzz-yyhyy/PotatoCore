@@ -1,18 +1,17 @@
 # Configuration for PotatoBot
 
-botcfg:
+qqnumber:
 
-  # deprecated
-
-  group: 123456
-  bot: 123456
-  op: 123456
+  # Enter the group where you want to enable PTB.
+  group: 114514
+  # Enter the QQ number of the bot you want to use
+  bot: 114514
+  # Enter the QQ number of the bot operator
+  op: 114514
 
 messages:
 
   # messages when player join or quit server
-  player-jq:
-
-    format:
-      join: "%player% 连接至服务器"
-      quit: "%player% 断开连接"
+  player:
+    join: "%player% 连接至服务器"
+    quit: "%player% 断开连接"
