@@ -1,11 +1,9 @@
 package io.yukonisen.potatocore.util
 
 import io.yukonisen.potatocore.PotatoCore
-import me.dreamvoid.miraimc.api.MiraiBot
 import org.bukkit.configuration.file.FileConfiguration
 import org.bukkit.configuration.file.YamlConfiguration
 import org.bukkit.plugin.Plugin
-import org.yaml.snakeyaml.Yaml
 import java.io.File
 
 object Config {

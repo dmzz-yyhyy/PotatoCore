@@ -12,23 +12,23 @@ public class PotatoCore extends JavaPlugin {
         getConfig().options().copyDefaults();
         saveDefaultConfig();
         saveResource("potatobotcfg.yml", false);
-        System.out.println("[PotatoCore] Loading");
+        this.getLogger().info("[PotatoCore] Loading");
     }
 
     @Override
     public void onEnable() {
 
-        System.out.println("Registering event -> Listener");
+        this.getLogger().info("Registering events -> Listener");
         getServer().getPluginManager().registerEvents(new OnGameChatEvent(), this);
         getServer().getPluginManager().registerEvents(new OnPlayerJoinOrQuit(), this);
         getServer().getPluginManager().registerEvents(new OnQQMessageEvent(), this);
 
-        System.out.println("PotatoCore ready.");
+        this.getLogger().info("PotatoCore ready.");
     }
 
     @Override
     public void onDisable() {
-        System.out.println("Disabling PotatoCore");
+        this.getLogger().info("Disabling PotatoCore");
     }
 
 }
