@@ -3,11 +3,12 @@
 qqnumber:
 
   # Enter the group where you want to enable PTB.
-  group: 114514
+  group: 341594930
   # Enter the QQ number of the bot you want to use
-  bot: 114514
+  bot: 1361161852
   # Enter the QQ number of the bot operator
-  op: 114514
+  op:
+    - "2576465750"
 
 messages:
 

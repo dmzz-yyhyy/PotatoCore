@@ -6,7 +6,14 @@
 A multifunctional plugin powered by MiraiMC.
 PotatoCore can run on Spigot or its forks, tested on PaperMC, Debian11.
 
+## Functions
+
+- [x] Online / Offline boardcasting
+- [x] Forward messages between QQ and game chat
+- [ ] Execute command from QQ (admin only)
+
 ## Usage
+
 ### In-Game
 
 | Command       | Note                         |
@@ -18,7 +25,6 @@ PotatoCore can run on Spigot or its forks, tested on PaperMC, Debian11.
 | Command       | Usage                        | Permission |
 |---------------|------------------------------|------------|
 | !#ping        | Check server status          | None       |
-| !#ptb ban [player] | Ban player with ID      | qqop       |
 | # [message]    | Forward message to Server Chat | None     |
 
 ## Permissions
@@ -30,7 +36,7 @@ PotatoCore can run on Spigot or its forks, tested on PaperMC, Debian11.
 ## License
 
 ```
-Copyright (C) 2022 by yukonisen#QwQ <yukonisen_qwq@curiousers.org.cn>
+Copyright (C) 2022 by yukonisen#QwQ <whenten99@gmail.com>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
