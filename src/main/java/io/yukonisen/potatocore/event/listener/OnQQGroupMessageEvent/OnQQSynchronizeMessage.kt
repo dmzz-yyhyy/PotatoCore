@@ -12,10 +12,9 @@ class OnQQSynchronizeMessage : Listener {
         val msg = event.message
         val namecard = event.senderNameCard
         val qqid = event.senderID.toString()
-        if (msg.startsWith("#") && event.groupID == Config.qqgroup) {
-            val forwardMsg = msg.substring(1)
+        if (event.groupID == Config.qqgroup) {
             val sender = if (namecard.isNullOrEmpty()) qqid else namecard
-            Bukkit.broadcastMessage("$sender > $forwardMsg")
+            Bukkit.broadcastMessage("$sender > $msg")
         }
     }
 }

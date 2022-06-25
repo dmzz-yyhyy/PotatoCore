@@ -7,13 +7,11 @@ A multifunctional plugin powered by MiraiMC.
 PotatoCore can run on Spigot or its forks, tested on PaperMC, Debian11.
 
 ## Functions
-
 - [x] Online / Offline boardcasting
 - [x] Forward messages between QQ and game chat
 - [ ] Execute command from QQ (admin only)
 
 ## Usage
-
 ### In-Game
 
 | Command       | Note                         |
