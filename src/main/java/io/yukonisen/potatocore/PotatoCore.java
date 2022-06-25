@@ -3,6 +3,7 @@ package io.yukonisen.potatocore;
 import io.yukonisen.potatocore.event.listener.OnGameChatEvent;
 import io.yukonisen.potatocore.event.listener.OnPlayerJoinOrQuit;
 import io.yukonisen.potatocore.event.listener.OnQQMessageEvent;
+import io.yukonisen.potatocore.util.Config;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class PotatoCore extends JavaPlugin {
@@ -12,23 +13,26 @@ public class PotatoCore extends JavaPlugin {
         getConfig().options().copyDefaults();
         saveDefaultConfig();
         saveResource("potatobotcfg.yml", false);
-        System.out.println("[PotatoCore] Loading");
+        this.getLogger().info("[PotatoCore] Loading");
     }
 
     @Override
     public void onEnable() {
 
-        System.out.println("Registering event -> Listener");
+        this.getLogger().info("Registering events -> Listener");
         getServer().getPluginManager().registerEvents(new OnGameChatEvent(), this);
         getServer().getPluginManager().registerEvents(new OnPlayerJoinOrQuit(), this);
         getServer().getPluginManager().registerEvents(new OnQQMessageEvent(), this);
 
-        System.out.println("PotatoCore ready.");
+        this.getLogger().info("PotatoCore ready.");
+        this.getLogger().info("" +
+                "Current qqbot: "+ Config.INSTANCE.getQqbot()+", qqgroup: "
+                + Config.INSTANCE.getQqgroup());
     }
 
     @Override
     public void onDisable() {
-        System.out.println("Disabling PotatoCore");
+        this.getLogger().info("Disabling PotatoCore");
     }
 
 }

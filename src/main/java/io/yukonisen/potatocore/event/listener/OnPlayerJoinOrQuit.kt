@@ -10,11 +10,9 @@ import org.bukkit.event.player.PlayerQuitEvent
 
 class OnPlayerJoinOrQuit : Listener {
 
-    var joinmsg: String = PTBConfig.getString("messages.player.join")
-    var quitmsg: String = PTBConfig.getString("messages.player.quit")
-
     @EventHandler
     fun onPlayerJoin(join: PlayerJoinEvent) {
+        var joinmsg: String = PTBConfig.getString("messages.player.join")
         val id = join.player.name
         joinmsg = joinmsg.replace("%player%", id)
         MiraiBot.getBot(Config.qqbot).getGroup(Config.qqgroup).sendMessageMirai(joinmsg)
@@ -22,6 +20,7 @@ class OnPlayerJoinOrQuit : Listener {
 
     @EventHandler
     fun onPlayerQuit(quit: PlayerQuitEvent) {
+        var quitmsg: String = PTBConfig.getString("messages.player.quit")
         val id = quit.player.name
         quitmsg = quitmsg.replace("%player%", id)
         MiraiBot.getBot(Config.qqbot).getGroup(Config.qqgroup).sendMessageMirai(quitmsg)
