@@ -4,41 +4,41 @@
 [![在 Telegram 上聊天](https://img.shields.io/badge/Chat%20on-Telegram-brightgreen.svg)](https://t.me/curiousersgames)
 
 由 MiraiMC 提供支持的多功能插件。
-PotatoCore 可以在 Spigot 或其分支上运行，并在 PaperMC、Debian11 上进行了测试。
+PotatoCore 可以在 Spigot 或其分支上運行，並在 PaperMC、Debian11 上進行了測試。
 
 ##### [中文 (简体)](https://github.com/dmzz-yyhyy/PotatoCore/blob/main/README.md) | [中文(繁體)](https://github.com/dmzz-yyhyy/PotatoCore/blob/main/README_zh-Hant.md) | [English](https://github.com/dmzz-yyhyy/PotatoCore/blob/main/README_en-US.md)
 
 ## 功能
 
-- [x] 上线/离线广播
-- [x] QQ和游戏聊天转发消息
-- [x] 从 QQ 执行命令（仅限管理员）
-- [ ] 管理材料仓库
-- [ ] 每日进度提醒
+- [x] 上線/離線廣播
+- [x] QQ和遊戲聊天轉發消息
+- [x] 從 QQ 執行命令（僅限管理員）
+- [ ] 管理材料倉庫
+- [ ] 每日進度提醒
 
 ## 用法
 
-### 在游戏中
+### 在遊戲中
 
 | 命令          | 功能       |
 |-------------|----------|
-| /ptb reload | 重新加载配置文件 |
+| /ptb reload | 重新加載配置文件 |
 
-### 组内
+### 組內
 
-|命令         |用法                    | 权限     |
+|命令         |用法                    | 權限     |
 |------------|-----------------------|--------|
-| !#ping     |检查服务器状态            | 无      |
-| #[消息]     |转发消息到服务器聊天       | 无      |
-| !#[命令]    |在服务器上运行命令         | 马铃薯管理员 |
+| !#ping     |檢查服務器狀態            | 無      |
+| #[消息]     |轉發消息到服務器聊天       | 無      |
+| !#[命令]    |在服務器上運行命令         | 馬鈴薯管理員 |
 
-## 权限
+## 權限
 
-| 权限          | 注意              | 默认  |
+| 權限          | 注意              | 默認  |
 |--------------|------------------|-------|
-| potato.admin | PotatoCore 管理员 | OP    |
+| potato.admin | PotatoCore 管理員 | OP    |
 
-## 许可证
+## 許可證
 
 ````
 Copyright (C) 2022 by yukonisen#QwQ <whenten99@gmail.com>

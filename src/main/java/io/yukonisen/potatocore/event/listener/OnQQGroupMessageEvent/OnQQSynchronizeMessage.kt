@@ -9,13 +9,13 @@ import org.bukkit.event.Listener
 class OnQQSynchronizeMessage : Listener {
     @EventHandler
     fun onGroupMessage(event: MiraiGroupMessageEvent) {
-        val msg = event.message
+        var msg = event.message
         val namecard = event.senderNameCard
         val qqid = event.senderID.toString()
-        if (msg.startsWith("#") && event.groupID == Config.qqgroup) {
-            val forwardMsg = msg.substring(1)
+        if (event.groupID == Config.qqgroup && msg.startsWith("#")) {
             val sender = if (namecard.isNullOrEmpty()) qqid else namecard
-            Bukkit.broadcastMessage("$sender > $forwardMsg")
+            msg = msg.replace("#", "")
+            Bukkit.broadcastMessage("$sender > $msg")
         }
     }
 }
