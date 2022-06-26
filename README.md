@@ -41,7 +41,8 @@ PotatoCore 可以在 Spigot 或其分支上运行，并在 PaperMC、Debian11 �
 ## 许可证
 
 ````
-Copyright (C) 2022 by yukonisen#QwQ <whenten99@gmail.com>
+                    GNU GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
