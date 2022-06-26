@@ -42,7 +42,7 @@ PotatoCore can run on Spigot or its forks, tested on PaperMC, Debian11.
 
 ```
 Copyright (C) 2022 by yukonisen#QwQ <whenten99@gmail.com>
-                      dmzz-yyhyy <hk198580666@outlook.com>
+Copyright (C) 2022 by dmzz-yyhyy <hk198580666@outlook.com>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
