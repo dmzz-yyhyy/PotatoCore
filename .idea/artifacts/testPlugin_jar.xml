@@ -1,6 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="testPlugin:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/testPlugin_jar</output-path>
-    <root id="archive" name="testPlugin.jar" />
-  </artifact>
-</component>
