@@ -38,7 +38,6 @@ PotatoCore can run on Spigot or its forks, tested on PaperMC, Debian11.
 ## Credits
 
 - [DreamVoid/MiraiMC](https://github.com/DreamVoid/MiraiMC)
-- [gRPC](https://google.golang.org/grpc)
 
 ## License
 
