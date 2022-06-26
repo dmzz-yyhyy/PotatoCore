@@ -1,17 +1,18 @@
 # PotatoCore for Spigot
 
-A multifunctional plugin powered by MiraiMC.
+A multifunctional plugin (not yet)
 PotatoCore can run on Spigot or its forks, tested on PaperMC, Debian11.
 
-##### [English](https://github.com/dmzz-yyhyy/PotatoCore/blob/main/README.md) | [中文 (简体)](https://github.com/dmzz-yyhyy/PotatoCore/blob/main/README_zh-CN.md) )
+##### [English](https://github.com/dmzz-yyhyy/PotatoCore/blob/main/README.md) | [中文 (简体)](https://github.com/dmzz-yyhyy/PotatoCore/blob/main/README_zh-CN.md)
 
 ## Functions
 
 - [x] Online / Offline broadcasting
 - [x] Forward messages between QQ and game chat
-- [x] Execute command from QQ (admin only)
-- [ ] Manage material warehouse
+- [ ] Execute command from QQ (admins only)
+- [ ] Manage storage items
 - [ ] Daily progress reminder
+- [ ] Reload config file using command
 
 ## Usage
 
@@ -33,6 +34,11 @@ PotatoCore can run on Spigot or its forks, tested on PaperMC, Debian11.
 | Permission      | Note             | Default |
 |-----------------|------------------|---------|
 | potato.admin    | PotatoCore admin | OP      |
+
+## Credits
+
+- [DreamVoid/MiraiMC](https://github.com/DreamVoid/MiraiMC)
+- [gRPC](https://google.golang.org/grpc)
 
 ## License
 
