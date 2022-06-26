@@ -1,7 +1,7 @@
 package io.yukonisen.potatocore.event.listener.OnQQGroupMessageEvent
 
 import io.yukonisen.potatocore.util.Config
-import me.dreamvoid.miraimc.bukkit.event.message.passive.MiraiGroupMessageEvent
+import me.dreamvoid.miraimc.bukkit.event.MiraiGroupMessageEvent
 import org.bukkit.Bukkit
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
