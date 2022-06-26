@@ -26,11 +26,10 @@ PotatoCore can run on Spigot or its forks, tested on PaperMC, Debian11.
 
 ### In-Group
 
-| Command    | Usage                          | Permission          |
-|------------|--------------------------------|---------------------|
-| !#ping     | Check server status            | None                |
-| #[message] | Forward message to Server Chat | None                |
-| !#[command]| Run a command on the sever     | PotatoAdministrator |
+| Command     | Usage                          | Permission          |
+|-------------|--------------------------------|---------------------|
+| !#ping      | Check server status            | None                |
+| #[message]  | Forward message to Server Chat | None                |
 
 ## Permissions
 
