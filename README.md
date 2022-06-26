@@ -1,42 +1,42 @@
-# Spigot 的 PotatoCore
+# PotatoCore for Spigot
 
-由 MiraiMC 提供支持的多功能插件。
-PotatoCore 可以在 Spigot 或其分支上运行，并在 PaperMC、Debian11 上进行了测试。
+A multifunctional plugin powered by MiraiMC.
+PotatoCore can run on Spigot or its forks, tested on PaperMC, Debian11.
 
-##### [中文 (简体)](https://github.com/dmzz-yyhyy/PotatoCore/blob/main/README.md) | [中文(繁體)](https://github.com/dmzz-yyhyy/PotatoCore/blob/main/README_zh-Hant.md) | [English](https://github.com/dmzz-yyhyy/PotatoCore/blob/main/README_en-US.md)
+##### [English](https://github.com/dmzz-yyhyy/PotatoCore/blob/main/README.md) | [中文 (简体)](https://github.com/dmzz-yyhyy/PotatoCore/blob/main/README_zh-CN.md) )
 
-## 功能
+## Functions
 
-- [x] 上线/离线广播
-- [x] QQ和游戏聊天转发消息
-- [x] 从 QQ 执行命令（仅限管理员）
-- [ ] 管理材料仓库
-- [ ] 每日进度提醒
+- [x] Online / Offline broadcasting
+- [x] Forward messages between QQ and game chat
+- [x] Execute command from QQ (admin only)
+- [ ] Manage material warehouse
+- [ ] Daily progress reminder
 
-## 用法
+## Usage
 
-### 在游戏中
+### In-Game
 
-| 命令          | 功能       |
-|-------------|----------|
-| /ptb reload | 重新加载配置文件 |
+| Command       | Note                         |
+|---------------|------------------------------|
+| /ptb reload   | Reload configuration files   |
 
-### 组内
+### In-Group
 
-| 命令     | 用法         | 权限     |
-|--------|------------|--------|
-| !#ping | 检查服务器状态    | 无      |
-| #[消息]  | 转发消息到服务器聊天 | 无      |
+| Command     | Usage                          | Permission          |
+|-------------|--------------------------------|---------------------|
+| !#ping      | Check server status            | None                |
+| #[message]  | Forward message to Server Chat | None                |
 
-## 权限
+## Permissions
 
-| 权限           | 注意             | 默认  |
-|--------------|----------------|-----|
-| potato.admin | PotatoCore 管理员 | OP  |
+| Permission      | Note             | Default |
+|-----------------|------------------|---------|
+| potato.admin    | PotatoCore admin | OP      |
 
-## 许可证
+## License
 
-````
+```
 Copyright (C) 2022 by yukonisen#QwQ <whenten99@gmail.com>
 Copyright (C) 2022 by dmzz-yyhyy <hk198580666@outlook.com>
 
@@ -52,4 +52,4 @@ General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>.
-````
+```
