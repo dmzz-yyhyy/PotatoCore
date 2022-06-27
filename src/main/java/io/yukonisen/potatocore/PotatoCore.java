@@ -5,7 +5,7 @@ import io.yukonisen.potatocore.event.listener.OnGameEvent.OnGameChat;
 import io.yukonisen.potatocore.event.listener.OnPlayerJoinOrQuit;
 import io.yukonisen.potatocore.event.listener.OnQQGroupMessageEvent.OnQQCommandMessage;
 import io.yukonisen.potatocore.event.listener.OnQQGroupMessageEvent.OnQQMaterialInquiry;
-import io.yukonisen.potatocore.event.listener.OnQQGroupMessageEvent.OnQQSynchronizeMessage;
+import io.yukonisen.potatocore.event.listener.OnQQGroupMessageEvent.OnQQChatMessage;
 import io.yukonisen.potatocore.util.Config;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -36,7 +36,7 @@ public class PotatoCore extends JavaPlugin {
         System.out.println("Registering event -> Listener");
         getServer().getPluginManager().registerEvents(new OnGameChat(), this);
         getServer().getPluginManager().registerEvents(new OnPlayerJoinOrQuit(), this);
-        getServer().getPluginManager().registerEvents(new OnQQSynchronizeMessage(), this);
+        getServer().getPluginManager().registerEvents(new OnQQChatMessage(), this);
         getServer().getPluginManager().registerEvents(new OnQQMaterialInquiry(), this);
         getServer().getPluginManager().registerEvents(new OnQQCommandMessage(), this);
 

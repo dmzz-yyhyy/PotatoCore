@@ -6,15 +6,18 @@ import org.bukkit.Bukkit
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
 
-class OnQQSynchronizeMessage : Listener {
+class OnQQChatMessage : Listener {
+
+    /* this will forward all group messages,
+    not only the messages that start with "#". */
+
     @EventHandler
     fun onGroupMessage(event: MiraiGroupMessageEvent) {
-        var msg = event.message
-        val namecard = event.senderNameCard
-        val qqid = event.senderID.toString()
-        if (event.groupID == Config.qqgroup && msg.startsWith("#")) {
-            val sender = if (namecard.isNullOrEmpty()) qqid else namecard
-            msg = msg.replace("#", "")
+        if (event.groupID == Config.qqgroup) {
+            val msg = event.message.toString()
+            val namecard = event.senderNameCard.toString()
+            val qqid = event.senderID.toString()
+            val sender = namecard.ifEmpty { qqid }
             Bukkit.broadcastMessage("$sender > $msg")
         }
     }
