@@ -2,13 +2,16 @@
 
 qqnumber:
 
-  # Enter the group where you want to enable PTB.
-  group: 341594930
-  # Enter the QQ number of the bot you want to use
-  bot: 1361161852
-  # Enter the QQ number of the bot operator
+  # Enter the group number where you want to use PTB. (eg. 114514)
+  group: 114514
+  # Enter the QQ number of the bot (login required, eg. 1919810)
+  bot: 1919810
+  # Enter the QQ number of the bot operators
   op:
-    - "2576465750"
+    - "1145141919810"
+    - "1145141919810000"
+
+  # These example qq numbers should be long enough to never be real qq numbers
 
 messages:
 
