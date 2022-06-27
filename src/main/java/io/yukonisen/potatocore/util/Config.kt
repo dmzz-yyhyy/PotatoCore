@@ -14,6 +14,6 @@ object Config {
     val qqbot: Long = PTBConfig.getLong("qqnumber.bot")
     val qqgroup: Long = PTBConfig.getLong("qqnumber.group")
     val qqop: MutableList<String>? = PTBConfig.getStringList("qqnumber.op")
-    val mcPrefix: String = plugin.config.getString("format-list.prefix.to-mc")
-    val qqPrefix: String = plugin.config.getString("format-list.prefix.to-qq")
+    val mcPrefix: String = plugin.config.getString("format.prefix.to-mc")
+    val qqPrefix: String = plugin.config.getString("format.prefix.to-qq")
 }
