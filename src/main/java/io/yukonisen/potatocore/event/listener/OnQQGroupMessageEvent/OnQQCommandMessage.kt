@@ -5,7 +5,7 @@ import io.yukonisen.potatocore.util.Config.qqbot
 import io.yukonisen.potatocore.util.Config.qqgroup
 import io.yukonisen.potatocore.util.Config.qqop
 import me.dreamvoid.miraimc.api.MiraiBot
-import me.dreamvoid.miraimc.bukkit.event.MiraiGroupMessageEvent
+import me.dreamvoid.miraimc.bukkit.event.message.passive.MiraiGroupMessageEvent
 import org.bukkit.Bukkit
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
