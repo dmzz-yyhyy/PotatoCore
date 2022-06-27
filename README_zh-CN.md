@@ -1,6 +1,6 @@
 # 适用于 Spigot 的 PotatoCore
 
-##### [English](https://github.com/dmzz-yyhyy/PotatoCore/blob/main/README.md) | [中文 (简体)](https://github.com/dmzz-yyhyy/PotatoCore/blob/main/README_zh-CN.md)
+##### [中文 (简体)](https://github.com/dmzz-yyhyy/PotatoCore/blob/main/README_zh-CN.md) | [中文(繁體)](https://github.com/dmzz-yyhyy/PotatoCore/blob/main/README_zh-Hant.md) | [English](https://github.com/dmzz-yyhyy/PotatoCore/blob/main/README.md)
 
 ## 功能
 
