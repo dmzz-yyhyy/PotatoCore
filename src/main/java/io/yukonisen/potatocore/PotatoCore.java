@@ -1,11 +1,13 @@
 package io.yukonisen.potatocore;
 
+import io.yukonisen.potatocore.event.command.PTBCommand;
 import io.yukonisen.potatocore.event.listener.OnGameEvent.OnGameChat;
 import io.yukonisen.potatocore.event.listener.OnPlayerJoinOrQuit;
 import io.yukonisen.potatocore.event.listener.OnQQGroupMessageEvent.OnQQCommandMessage;
 import io.yukonisen.potatocore.event.listener.OnQQGroupMessageEvent.OnQQMaterialInquiry;
 import io.yukonisen.potatocore.event.listener.OnQQGroupMessageEvent.OnQQSynchronizeMessage;
 import io.yukonisen.potatocore.util.Config;
+import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class PotatoCore extends JavaPlugin {
@@ -26,6 +28,9 @@ public class PotatoCore extends JavaPlugin {
 
     @Override
     public void onEnable() {
+
+        System.out.println("Registering event -> CommandExecutor");
+        Bukkit.getPluginCommand("ptb").setExecutor(new PTBCommand());
 
         instance = this;
         System.out.println("Registering event -> Listener");
