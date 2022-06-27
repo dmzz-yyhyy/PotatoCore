@@ -1,19 +1,17 @@
 # PotatoCore for Spigot
 
-[![Kotlin Version](https://img.shields.io/badge/Kotlin-1.6.21-blue.svg)](https://kotlinlang.org)
-[![Chat on Telegram](https://img.shields.io/badge/Chat%20on-Telegram-brightgreen.svg)](https://t.me/curiousersgames)
-
-A multifunctional plugin powered by MiraiMC.
+A multifunctional plugin (not yet)
 PotatoCore can run on Spigot or its forks, tested on PaperMC, Debian11.
 
-##### [中文 (简体)](https://github.com/dmzz-yyhyy/PotatoCore/blob/main/README_zh-CN.md) | [中文(繁體)](https://github.com/dmzz-yyhyy/PotatoCore/blob/main/README_zh-Hant.md) | [English](https://github.com/dmzz-yyhyy/PotatoCore/blob/main/README.md)
+##### [English](https://github.com/dmzz-yyhyy/PotatoCore/blob/main/README.md) | [中文 (简体)](https://github.com/dmzz-yyhyy/PotatoCore/blob/main/README_zh-CN.md)
 
 ## Functions
 
-- [x] Online / Offlinae boardcasting
+- [x] Online / Offline broadcasting
 - [x] Forward messages between QQ and game chat
-- [x] Execute command from QQ (admin only)
-- [ ] Manage material warehouse
+- [x] Execute command from QQ (admins only)
+- [x] Reload config file using command
+- [ ] Manage storage items
 - [ ] Daily progress reminder
 
 ## Usage
@@ -26,11 +24,10 @@ PotatoCore can run on Spigot or its forks, tested on PaperMC, Debian11.
 
 ### In-Group
 
-| Command    | Usage                          | Permission          |
-|------------|--------------------------------|---------------------|
-| !#ping     | Check server status            | None                |
-| #[message] | Forward message to Server Chat | None                |
-| !#[command]| Run a command on the sever     | PotatoAdministrator |
+| Command     | Usage                          | Permission          |
+|-------------|--------------------------------|---------------------|
+| !#ping      | Check server status            | None                |
+| #[message]  | Forward message to Server Chat | None                |
 
 ## Permissions
 
@@ -39,13 +36,14 @@ PotatoCore can run on Spigot or its forks, tested on PaperMC, Debian11.
 | potato.admin    | PotatoCore admin | OP      |
 
 ## Credits
+
 - [DreamVoid/MiraiMC](https://github.com/DreamVoid/MiraiMC)
 
 ## License
 
 ```
 Copyright (C) 2022 by yukonisen#QwQ <whenten99@gmail.com>
-                      dmzz-yyhyy <hk198580666@outlook.com>
+Copyright (C) 2022 by dmzz-yyhyy <hk198580666@outlook.com>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
