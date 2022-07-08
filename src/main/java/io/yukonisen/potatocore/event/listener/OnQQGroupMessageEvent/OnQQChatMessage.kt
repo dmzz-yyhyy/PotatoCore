@@ -1,5 +1,6 @@
 package io.yukonisen.potatocore.event.listener.OnQQGroupMessageEvent
 
+import io.yukonisen.potatocore.PotatoCore
 import io.yukonisen.potatocore.util.Config
 import me.dreamvoid.miraimc.bukkit.event.message.passive.MiraiGroupMessageEvent
 import org.bukkit.Bukkit
@@ -13,12 +14,17 @@ class OnQQChatMessage : Listener {
 
     @EventHandler
     fun onGroupMessage(event: MiraiGroupMessageEvent) {
-        if (event.groupID == Config.qqgroup) {
-            val msg = event.message.toString()
-            val namecard = event.senderNameCard.toString()
-            val qqid = event.senderID.toString()
-            val sender = namecard.ifEmpty { qqid }
-            Bukkit.broadcastMessage("$sender > $msg")
+        if (PotatoCore.getGroup() != null) {
+            if (event.groupID == Config.qqgroup) {
+                if (event.message.startsWith("#")) {
+                    val msg = event.message.toString().replaceFirst("#", "")
+                    val namecard = event.senderNameCard.toString()
+                    val qqid = event.senderID.toString()
+                    val name = event.senderName
+                    val sender = namecard.ifEmpty { name }
+                    Bukkit.broadcastMessage("$sender > $msg")
+                }
+            }
         }
     }
 }
