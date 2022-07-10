@@ -19,7 +19,6 @@ class OnQQChatMessage : Listener {
                 if (event.message.startsWith("#")) {
                     val msg = event.message.toString().replaceFirst("#", "")
                     val namecard = event.senderNameCard.toString()
-                    val qqid = event.senderID.toString()
                     val name = event.senderName
                     val sender = namecard.ifEmpty { name }
                     Bukkit.broadcastMessage("$sender > $msg")

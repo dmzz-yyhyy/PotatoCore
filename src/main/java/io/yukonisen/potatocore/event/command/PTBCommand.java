@@ -1,7 +1,6 @@
 package io.yukonisen.potatocore.event.command;
 
 import io.yukonisen.potatocore.util.Config;
-import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -14,11 +13,11 @@ public class PTBCommand implements CommandExecutor {
         //reload command
         if (args[0].equalsIgnoreCase("reload")) {
             Config.INSTANCE.getPlugin().reloadConfig();
-            sender.sendMessage(Config.INSTANCE.getMcPrefix() + "&aConfig files reloaded");
+            sender.sendMessage(Config.INSTANCE.getMcPrefix() + Config.INSTANCE.getConfigFilesReloaded());
             return true;
         }
         // invalid args
-        sender.sendMessage(Config.INSTANCE.getQqPrefix() + "&cInvalid arguments");
+        sender.sendMessage(Config.INSTANCE.getQqPrefix() + Config.INSTANCE.getInvalidArguments());
         return false;
     }
 }

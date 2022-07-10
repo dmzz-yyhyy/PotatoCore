@@ -1,6 +1,11 @@
 # Configuration file for PotatoCore
 # by yukonisen#QwQ
 
+# When to automatically send the schedule
+schedule_timer: "23:22"
+# language "zh-cn" “en-us”
+language: "zh-cn"
+
 format:
 
   prefix:

@@ -1,0 +1,15 @@
+config_files_reloaded: "&a设置文件已重新加载"
+invalid_arguments: "&c参数错误"
+responsible: "负责者"
+congratulations: "恭喜"
+successfully_complete_program: "成功完成日程"
+complete_schedule_error: "日程完成失败,要完成的日程不存在"
+complete_schedule_incomplete_parameters: ' 日程完成失败,请检查参数是否填写齐全\n 命令格式\n 完成日程  [完成的日程名称]'
+successfully_setting_schedule: "成功修改日程"
+setting_schedule_error: "日程修改失败,要修改的日程不存在"
+setting_schedule_incomplete_parameters: '日程修改失败,请检查参数是否填写齐全\n 命令格式\n 修改日程  [需要修改的日程名称]  [修改后的日程名称]  [修改后的负责人(如果有多人请用|分割,如:dmzz|yyhyy]  [修改后的关联仓库(可选)]'
+schedule_added_successfully: "成功添加日程"
+schedule_added_incomplete_parameters: '日程添加失败,请检查参数是否填写齐全\n 命令格式\n 添加日程  [日程名称]  [负责人(如果有多人请用|分割,如:dmzz|yyhyy]  [关联仓库(可选)]'
+unfinished_schedule: "未完成日程"
+send_schedule_timer: "你好,今天又是美好的一天,看看有没有什么没有完成的日程吧。"
+come_on_today: "今天也要加油哟"

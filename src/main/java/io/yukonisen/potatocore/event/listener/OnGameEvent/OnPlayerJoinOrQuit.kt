@@ -15,6 +15,7 @@ class OnPlayerJoinOrQuit : Listener {
             val joinmsg: String = PTBConfig.getString("messages.player.join")
             val id = join.player.name
             val msg = joinmsg.replace("%player%", id)
+            PotatoCore.getGroup().sendMessageMirai(msg)
         }
     }
 
