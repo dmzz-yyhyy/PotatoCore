@@ -1,4 +1,4 @@
-package io.yukonisen.potatocore.event.listener.OnQQGroupMessageEvent
+package io.yukonisen.potatocore.event.listener.group
 
 import io.yukonisen.potatocore.PotatoCore
 import io.yukonisen.potatocore.util.Config
@@ -14,6 +14,12 @@ import java.io.File
 import java.io.IOException
 
 class OnQQDailyProgressReminder : Listener {
+
+    /*
+    * TODO: Please OPTIMIZE or rewrite your code
+    *  and merge into GroupCommandListener!  - yukonisen
+    */
+
     @EventHandler
     fun inquiryReply(event: MiraiGroupMessageEvent) {
         val group = MiraiBot.getBot(qqbot).getGroup(qqgroup)

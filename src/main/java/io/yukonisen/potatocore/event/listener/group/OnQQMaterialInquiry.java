@@ -1,4 +1,4 @@
-package io.yukonisen.potatocore.event.listener.OnQQGroupMessageEvent;
+package io.yukonisen.potatocore.event.listener.group;
 
 import org.bukkit.event.Listener;
 

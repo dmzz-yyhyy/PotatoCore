@@ -1,12 +1,12 @@
 package io.yukonisen.potatocore;
 
 import io.yukonisen.potatocore.event.command.PTBCommand;
-import io.yukonisen.potatocore.event.listener.OnGameEvent.OnGameChat;
-import io.yukonisen.potatocore.event.listener.OnPlayerJoinOrQuit;
-import io.yukonisen.potatocore.event.listener.OnQQGroupMessageEvent.OnQQChatMessage;
-import io.yukonisen.potatocore.event.listener.OnQQGroupMessageEvent.OnQQCommandMessage;
-import io.yukonisen.potatocore.event.listener.OnQQGroupMessageEvent.OnQQDailyProgressReminder;
-import io.yukonisen.potatocore.event.listener.OnQQGroupMessageEvent.OnQQMaterialInquiry;
+import io.yukonisen.potatocore.event.listener.game.GameChatListener;
+import io.yukonisen.potatocore.event.listener.PlayerSessionListener;
+import io.yukonisen.potatocore.event.listener.group.GroupCommandListener;
+import io.yukonisen.potatocore.event.listener.group.GroupMsgListener;
+import io.yukonisen.potatocore.event.listener.group.OnQQDailyProgressReminder;
+import io.yukonisen.potatocore.event.listener.group.OnQQMaterialInquiry;
 import io.yukonisen.potatocore.event.timer.SendQQDailyProgressReminderMessage;
 import io.yukonisen.potatocore.util.Config;
 import me.dreamvoid.miraimc.api.MiraiBot;
@@ -57,24 +57,24 @@ public class PotatoCore extends JavaPlugin {
         Bukkit.getPluginCommand("ptb").setExecutor(new PTBCommand());
 
         System.out.println("[PotatoCore] Registering event -> Listener");
-        getServer().getPluginManager().registerEvents(new OnGameChat(), this);
-        getServer().getPluginManager().registerEvents(new OnPlayerJoinOrQuit(), this);
-        getServer().getPluginManager().registerEvents(new OnQQChatMessage(), this);
+        getServer().getPluginManager().registerEvents(new GameChatListener(), this);
+        getServer().getPluginManager().registerEvents(new PlayerSessionListener(), this);
+        getServer().getPluginManager().registerEvents(new GroupCommandListener(), this);
         getServer().getPluginManager().registerEvents(new OnQQMaterialInquiry(), this);
-        getServer().getPluginManager().registerEvents(new OnQQCommandMessage(), this);
+        getServer().getPluginManager().registerEvents(new GroupMsgListener(), this);
         getServer().getPluginManager().registerEvents(new OnQQDailyProgressReminder(), this);
 
         System.out.println("[PotatoCore] Registering event -> Timer");
         new SendQQDailyProgressReminderMessage().start(0, 80L);
 
         this.getLogger().info("PotatoCore ready.");
-        this.getLogger().info("" + "Current qqbot: " + Config.INSTANCE.getQqbot() + ", qqgroup: " + Config.INSTANCE.getQqgroup());
+        this.getLogger().info("Current qqbot: " + Config.INSTANCE.getQqbot() + ", qqgroup: " + Config.INSTANCE.getQqgroup());
 
     }
 
     @Override
     public void onDisable() {
-        System.out.println("Disabling PotatoCore");
+        System.out.println("PotatoCore Disabled");
     }
 
 }

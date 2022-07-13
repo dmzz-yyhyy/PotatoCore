@@ -6,7 +6,7 @@
 
     <groupId>io.yukonisen.potatocore</groupId>
     <artifactId>PotatoCore</artifactId>
-    <version>0.1</version>
+    <version>0.2-beta1</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -98,8 +98,8 @@
 
         <dependency>
             <groupId>io.github.dreamvoid</groupId>
-            <artifactId>MiraiMC-Bukkit</artifactId>
-            <version>1.5-pre1</version>
+            <artifactId>MiraiMC-Integration</artifactId>
+            <version>1.7-rc2</version>
             <scope>provided</scope>
         </dependency>
 

@@ -1,11 +1,11 @@
-package io.yukonisen.potatocore.event.listener.OnGameEvent
+package io.yukonisen.potatocore.event.listener.game
 
 import io.yukonisen.potatocore.PotatoCore
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
 import org.bukkit.event.player.AsyncPlayerChatEvent
 
-class OnGameChat : Listener {
+class GameChatListener : Listener {
 
     @EventHandler
     fun onAsyncGameChat(event: AsyncPlayerChatEvent) {
