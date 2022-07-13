@@ -18,7 +18,7 @@ object Config {
     val qqPrefix: String = plugin.config.getString("format.prefix.to-qq")
     val scheduleTimer: String = plugin.config.getString("schedule_timer")
 
-    //language
+    // TODO: DO NOT declare every message here
     val language: String = plugin.config.getString("language")
     val languageConfig: FileConfiguration =
         YamlConfiguration.loadConfiguration(File(plugin.dataFolder, "language/" + language + ".yml"))
