@@ -1,4 +1,4 @@
-package io.yukonisen.potatocore.event.listener
+package io.yukonisen.potatocore.event.listener.game
 
 import io.yukonisen.potatocore.PotatoCore
 import io.yukonisen.potatocore.util.Config.PTBConfig
@@ -21,7 +21,7 @@ class PlayerSessionListener : Listener {
 
     @EventHandler
     fun onPlayerQuit(quit: PlayerQuitEvent) {
-        if (PotatoCore.getGroup() == null) {
+        if (PotatoCore.getGroup() != null) {
             val quitmsg: String = PTBConfig.getString("messages.player.quit")
             val id = quit.player.name
             val msg = quitmsg.replace("%player%", id)

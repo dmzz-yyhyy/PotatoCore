@@ -2,7 +2,7 @@ package io.yukonisen.potatocore;
 
 import io.yukonisen.potatocore.event.command.PTBCommand;
 import io.yukonisen.potatocore.event.listener.game.GameChatListener;
-import io.yukonisen.potatocore.event.listener.PlayerSessionListener;
+import io.yukonisen.potatocore.event.listener.game.PlayerSessionListener;
 import io.yukonisen.potatocore.event.listener.group.GroupCommandListener;
 import io.yukonisen.potatocore.event.listener.group.GroupMsgListener;
 import io.yukonisen.potatocore.event.listener.group.OnQQDailyProgressReminder;

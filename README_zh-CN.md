@@ -1,9 +1,9 @@
 # 适用于 Spigot 的 PotatoCore
 
-由 MiraiMC 提供支持的多功能插件。
+多功能插件。
 PotatoCore 可以在 Spigot 或其分支上运行，并在 PaperMC、Debian11 上进行了测试。
 
-##### [中文 (简体)](https://github.com/dmzz-yyhyy/PotatoCore/blob/main/README_zh-CN.md) | [中文 (繁體)](https://github.com/dmzz-yyhyy/PotatoCore/blob/main/README_zh-Hant.md) | [English](https://github.com/dmzz-yyhyy/PotatoCore/blob/main/README.md)
+##### [中文 (简体)] | [中文 (繁體)](https://github.com/dmzz-yyhyy/PotatoCore/blob/main/README_zh-Hant.md) | [English](https://github.com/dmzz-yyhyy/PotatoCore/blob/main/README.md)
 
 ## 计划
 
