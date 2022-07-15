@@ -5,7 +5,7 @@ import io.yukonisen.potatocore.event.listener.game.GameChatListener;
 import io.yukonisen.potatocore.event.listener.game.PlayerSessionListener;
 import io.yukonisen.potatocore.event.listener.group.GroupCommandListener;
 import io.yukonisen.potatocore.event.listener.group.GroupMsgListener;
-import io.yukonisen.potatocore.event.timer.SendQQDailyProgressReminderMessage;
+import io.yukonisen.potatocore.event.timer.GroupTodoRemindTimer;
 import io.yukonisen.potatocore.util.Config;
 import me.dreamvoid.miraimc.api.MiraiBot;
 import me.dreamvoid.miraimc.api.bot.MiraiGroup;
@@ -51,7 +51,7 @@ public class PotatoCore extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new GroupMsgListener(), this);
 
         System.out.println("[PotatoCore] Registering event -> Timer");
-        new SendQQDailyProgressReminderMessage().start(0, 80L);
+        new GroupTodoRemindTimer().start(0, 80L);
 
         this.getLogger().info("PotatoCore ready.");
         this.getLogger().info("Current qqbot: " + Config.INSTANCE.getQqbot() + ", qqgroup: " + Config.INSTANCE.getQqgroup());

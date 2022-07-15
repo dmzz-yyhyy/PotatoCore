@@ -42,7 +42,7 @@ object TodoReminder {
         }
         var todo: String = todoData["item"].toString()
         val leaderName = getTodoLeader(todoName)
-        todo += "\n      ${Config.responsible}:$leaderName"
+        todo += "\n      ${Lang.leaders}:$leaderName"
         return todo
     }
 
@@ -76,7 +76,7 @@ object TodoReminder {
             }
             todoDataList.add(todoMap)
         }
-        todoListFile.set("data", todoDataList)
+        todoListFile.set("todo", todoDataList)
         try {
             todoListFile.save(File(PotatoCore.getInstance().dataFolder, "data/todolist.yml"))
         } catch (ignored: IOException) {
@@ -94,7 +94,7 @@ object TodoReminder {
                 index++
             }
         }
-        todoListFile.set("data", todoDataList)
+        todoListFile.set("todo", todoDataList)
         try {
             todoListFile.save(File(PotatoCore.getInstance().dataFolder, "data/todolist.yml"))
         } catch (ignored: IOException) {
@@ -102,40 +102,40 @@ object TodoReminder {
     }
 
     fun checkTodo(): String {
-        var message: String = Config.unfinishedSchedule
+        var message: String = Lang.uncompleted_todo
         message += "\n" + getAllTodo()
         return message
     }
 
     fun addTodo(args: List<String>): String {
         var message: String
-        if (!((args.size == 3) or (args.size == 4))) {
-            message = Config.scheduleAddedIncompleteParameters
+        if (args.size !in 4..5) {
+            message = Lang.error_adding_todo_invalid_args
             return message
         }
-        val leadersList: List<String> = args[2].split("|")
-        if (args.size == 3) {
-            setTodoData("", args[1], leadersList, "null")
-        }
+        val leadersList: List<String> = args[3].split("|")
         if (args.size == 4) {
-            setTodoData("", args[1], leadersList, args[3])
+            setTodoData("", args[2], leadersList, "null")
         }
-        message = Config.scheduleAddedSuccessfully
-        message = message + "\n" + getTodoItem(args[1])
+        if (args.size == 5) {
+            setTodoData("", args[2], leadersList, args[4])
+        }
+        message = Lang.todo_added
+        message = message + "\n" + getTodoItem(args[2])
         return message
     }
 
     fun modifyTodo(args: List<String>): String {
         var message: String
-        if (!((args.size == 4) or (args.size == 5))) {
-            message = Config.settingScheduleIncompleteParameters
+        if (args.size !in 4..5) {
+            message = Lang.error_modifying_todo_invalid_args
             return message
         }
         if (getTodoData(args[1]) == null) {
-            message = Config.settingScheduleError
+            message = Lang.error_modifying_todo
             return message
         }
-        message = Config.successfullySettingSchedule
+        message = Lang.todo_modified
         val leadersList: List<String> = args[3].split("|")
         if (args.size == 4) {
             setTodoData(args[1], args[2], leadersList, "null")
@@ -149,17 +149,17 @@ object TodoReminder {
 
     fun completeTodo(args: List<String>): String {
         var message: String
-        if (args.size != 2) {
-            message = Config.completeScheduleIncompleteParameters
+        if (args.size != 3) {
+            message = Lang.error_completing_todo_invalid_args
             return message
         }
-        if (getTodoData(args[1]) == null) {
-            message = Config.completeScheduleError
+        if (getTodoData(args[2]) == null) {
+            message = Lang.error_completing_todo
             return message
         }
-        message = Config.successfullyCompleteProgram
-        message = "$message\n" + getTodoItem(args[1]) + "${Config.congratulations}\n"
-        removeTodoData(args[1])
+        message = Lang.todo_completed
+        message = "$message\n" + getTodoItem(args[1]) + "${Lang.congratulations}\n"
+        removeTodoData(args[2])
         return message
     }
 }

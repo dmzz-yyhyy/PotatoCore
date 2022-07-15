@@ -1,15 +1,13 @@
-config_files_reloaded: "&aConfig files reloaded"
+config_files_reloaded: "&aConfig files reloaded!"
 invalid_arguments: "&cInvalid arguments"
-responsible: "responsible"
-congratulations: "congratulations"
-successfully_complete_program: "successfully complete the program"
-complete_schedule_error: "complete schedule error, can't find schedule"
-complete_schedule_incomplete_parameters: ' The schedule failed to complete, please check whether the parameters are filled in completely\n command format\n Completed schedule [completed schedule name]'
-successfully_setting_schedule: "successfully setting schedule"
-setting_schedule_error: "setting schedule error, can't find schedule"
-setting_schedule_incomplete_parameters: ' The schedule modification failed, please check whether the parameters are filled in completely\n command format\n Add schedule [Name of schedule to be modified] [Name of modified schedule] [Modified person in charge (if there are multiple people, please use | to split, such as: dmzz|yyhyy] [Modified associated warehouse (optional)]'
-schedule_added_successfully: "schedule added successfully"
-schedule_added_incomplete_parameters: 'Failed to add schedule, please check whether the parameters are filled in completely\n command format\n Add schedule [schedule name] [responsible person (if there are multiple people, please use | to divide, such as: dmzz|yyhyy] [associated warehouse (optional)]'
-unfinished_schedule: "unfinished schedule"
-send_schedule_timer: "hello, today is another good day, let's see if there are any unfinished schedules"
-come_on_today: "Come on today too"
+leaders: "Leaders"
+congratulations: "Congratulations!"
+todo_completed: "Marked TODO complete."
+error_completing_todo: "Error completing TODO: not found"
+error_completing_todo_invalid_args: "Failed to mark TODO as completed. Please check your parameters.\nCommand Format: \n !#todo complete [name]"
+todo_modified: "Successfully modified TODO."
+error_modifying_todo: "Error modifying TODO: not found"
+error_modifying_todo_invalid_args: "Failed to modify TODO. Please check your parameters.\nCommand Format: \n !#todo set [old name] [new name] [leaders (use \"|\" to split)] [storage (optional)]"
+todo_added: "Successfully added TODO"
+error_adding_todo_invalid_args: 'Failed to add TODO. Please check your parameters.\nCommand Format: \n !#todo add [name] [leaders (use \"|\" to split)] [storage (optional)]'
+uncompleted_todo: "Uncompleted TODO:"
