@@ -21,6 +21,18 @@ class GroupCommandListener : Listener {
             val version = Bukkit.getVersion()
             group.sendMessageMirai("PTB running on $version")
         }
+        if (message == "!#todo list") {
+            PotatoCore.getGroup().sendMessage(TodoReminder.checkTodo())
+        }
+        if (message.startsWith("!#todo add")) {
+            PotatoCore.getGroup().sendMessage(TodoReminder.addTodo(message.split(" ")))
+        }
+        if (message.startsWith("!#todo set")) {
+            PotatoCore.getGroup().sendMessage(TodoReminder.modifyTodo(message.split(" ")))
+        }
+        if (message.startsWith("!#todo complete")) {
+            PotatoCore.getGroup().sendMessage(TodoReminder.completeTodo(message.split(" ")))
+        }
         if (message.startsWith("!#") && event.groupID == qqgroup &&
             Objects.requireNonNull<List<String>?>(qqop).contains(event.senderID.toString())
         ) {
@@ -30,18 +42,6 @@ class GroupCommandListener : Listener {
                     message.replaceFirst("!#".toRegex(), "")
                 )
             }
-        }
-        if (message == "查看日程") {
-            PotatoCore.getGroup().sendMessage(TodoReminder.checkTodo())
-        }
-        if (message.startsWith("添加日程")) {
-            PotatoCore.getGroup().sendMessage(TodoReminder.addTodo(message.split(" ")))
-        }
-        if (message.startsWith("修改日程")) {
-            PotatoCore.getGroup().sendMessage(TodoReminder.modifyTodo(message.split(" ")))
-        }
-        if (message.startsWith("完成日程")) {
-            PotatoCore.getGroup().sendMessage(TodoReminder.completeTodo(message.split(" ")))
         }
 
     }

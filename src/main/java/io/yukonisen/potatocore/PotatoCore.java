@@ -5,8 +5,6 @@ import io.yukonisen.potatocore.event.listener.game.GameChatListener;
 import io.yukonisen.potatocore.event.listener.game.PlayerSessionListener;
 import io.yukonisen.potatocore.event.listener.group.GroupCommandListener;
 import io.yukonisen.potatocore.event.listener.group.GroupMsgListener;
-import io.yukonisen.potatocore.event.listener.group.OnQQDailyProgressReminder;
-import io.yukonisen.potatocore.event.listener.group.OnQQMaterialInquiry;
 import io.yukonisen.potatocore.event.timer.SendQQDailyProgressReminderMessage;
 import io.yukonisen.potatocore.util.Config;
 import me.dreamvoid.miraimc.api.MiraiBot;

@@ -11,8 +11,8 @@ class GroupMsgListener : Listener {
 
     @EventHandler
     fun onGroupMessage(event: MiraiGroupMessageEvent) {
-        if (PotatoCore.getGroup() != null) {
-            if (event.groupID == Config.qqgroup && event.message.startsWith("#")) {
+        if (event.message.startsWith("#")) {
+            if (event.groupID == Config.qqgroup) {
                 val msg = event.message.toString().drop(1)
                 val namecard = event.senderNameCard.toString()
                 val name = event.senderName
