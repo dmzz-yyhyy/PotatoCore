@@ -11,14 +11,12 @@ class GameChatListener : Listener {
 
     @EventHandler
     fun onAsyncGameChat(event: AsyncPlayerChatEvent) {
-        if (PotatoCore.getGroup() != null) {
-            val msg = event.message
-            if (msg.startsWith("#")) {
-                val forwardMsg: String = msg.substring(1)
-                PotatoCore.getGroup().sendMessageMirai(
-                    event.player.displayName + ": " + forwardMsg
-                )
-            }
+        val msg = event.message
+        if (PotatoCore.getGroup() != null && msg.startsWith("#")) {
+            val forwardMsg: String = msg.substring(1)
+            PotatoCore.getGroup().sendMessageMirai(
+                event.player.displayName + ": " + forwardMsg
+            )
         }
     }
 }

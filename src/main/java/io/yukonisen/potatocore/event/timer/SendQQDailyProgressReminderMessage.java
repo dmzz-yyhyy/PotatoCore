@@ -25,7 +25,7 @@ public class SendQQDailyProgressReminderMessage extends BukkitRunnable {
         SimpleDateFormat formatter = new SimpleDateFormat("HH:mm");
         Date date = new Date(System.currentTimeMillis());
         if (formatter.format(date).replace("\\p{C}", "").equals(Config.INSTANCE.getScheduleTimer()) && !isSendMessageLastTime) {
-            FileConfiguration schedules = YamlConfiguration.loadConfiguration(new File(PotatoCore.getInstance().getDataFolder(), "data/schedule.yml"));
+            FileConfiguration schedules = YamlConfiguration.loadConfiguration(new File(PotatoCore.getInstance().getDataFolder(), "data/todolist.yml"));
             sendMessage = Config.INSTANCE.getSendScheduleTimer();
             List<Map<?, ?>> schedulesList = schedules.getMapList("data");
             for (Map<?, ?> schedule : schedulesList) {

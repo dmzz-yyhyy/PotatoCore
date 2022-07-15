@@ -1,6 +1,7 @@
 package io.yukonisen.potatocore.event.listener.group
 
 import io.yukonisen.potatocore.PotatoCore
+import io.yukonisen.potatocore.util.TodoReminder
 import io.yukonisen.potatocore.util.Config.qqbot
 import io.yukonisen.potatocore.util.Config.qqgroup
 import io.yukonisen.potatocore.util.Config.qqop
@@ -30,5 +31,18 @@ class GroupCommandListener : Listener {
                 )
             }
         }
+        if (message == "查看日程") {
+            PotatoCore.getGroup().sendMessage(TodoReminder.checkTodo())
+        }
+        if (message.startsWith("添加日程")) {
+            PotatoCore.getGroup().sendMessage(TodoReminder.addTodo(message.split(" ")))
+        }
+        if (message.startsWith("修改日程")) {
+            PotatoCore.getGroup().sendMessage(TodoReminder.modifyTodo(message.split(" ")))
+        }
+        if (message.startsWith("完成日程")) {
+            PotatoCore.getGroup().sendMessage(TodoReminder.completeTodo(message.split(" ")))
+        }
+
     }
 }
