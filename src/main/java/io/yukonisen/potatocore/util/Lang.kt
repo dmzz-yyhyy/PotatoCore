@@ -27,4 +27,5 @@ object Lang {
     val todo_added: String = languageConfig.getString("todo_added")
     val error_adding_todo_invalid_args: String = languageConfig.getString("error_adding_todo_invalid_args")
     val uncompleted_todo: String = languageConfig.getString("uncompleted_todo")
+    val sendScheduleTimer: String = languageConfig.getString("send_schedule_timer")
 }

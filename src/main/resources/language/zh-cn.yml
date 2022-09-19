@@ -11,3 +11,4 @@ error_modifying_todo_invalid_args: "日程修改失败,请检查参数是否填�
 todo_added: "成功添加日程"
 error_adding_todo_invalid_args: "日程添加失败,请检查参数是否填写齐全\n 命令格式\n !#todo add [日程名称] [负责人(如果有多人请用|分割,如:dmzz|yyhyy] [关联仓库(可选)]"
 uncompleted_todo: "未完成日程"
+send_schedule_timer: "看看有没有什么没有完成的日程吧。"

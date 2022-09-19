@@ -6,7 +6,7 @@ import io.yukonisen.potatocore.util.Config.qqbot
 import io.yukonisen.potatocore.util.Config.qqgroup
 import io.yukonisen.potatocore.util.Config.qqop
 import me.dreamvoid.miraimc.api.MiraiBot
-import me.dreamvoid.miraimc.bukkit.event.message.passive.MiraiGroupMessageEvent
+import me.dreamvoid.miraimc.bukkit.event.MiraiGroupMessageEvent
 import org.bukkit.Bukkit
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
@@ -27,7 +27,7 @@ class GroupCommandListener : Listener {
         if (message.startsWith("!#todo add")) {
             PotatoCore.getGroup().sendMessage(TodoReminder.addTodo(message.split(" ")))
         }
-        if (message.startsWith("!#todo set")) {
+        if (message.startsWith("!#todo edit")) {
             PotatoCore.getGroup().sendMessage(TodoReminder.modifyTodo(message.split(" ")))
         }
         if (message.startsWith("!#todo complete")) {

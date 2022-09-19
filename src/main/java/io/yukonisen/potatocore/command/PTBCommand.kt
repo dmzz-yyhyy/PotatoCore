@@ -10,7 +10,7 @@ import org.bukkit.command.CommandSender
 class PTBCommand : CommandExecutor {
     override fun onCommand(sender: CommandSender, command: Command, label: String, args: Array<String>): Boolean {
         //reload command
-        if (args[0].equals("reload", ignoreCase = true)) {
+        if (args[0] == "reload") {
             plugin.reloadConfig()
             sender.sendMessage(Config.mcPrefix + Lang.config_files_reloaded)
             return true

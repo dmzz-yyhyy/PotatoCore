@@ -11,3 +11,4 @@ error_modifying_todo_invalid_args: "Failed to modify TODO. Please check your par
 todo_added: "Successfully added TODO"
 error_adding_todo_invalid_args: 'Failed to add TODO. Please check your parameters.\nCommand Format: \n !#todo add [name] [leaders (use \"|\" to split)] [storage (optional)]'
 uncompleted_todo: "Uncompleted TODO:"
+send_schedule_timer: "看看有没有什么没有完成的日程吧。"

@@ -3,17 +3,17 @@ version: '${version}'
 main: io.yukonisen.potatocore.PotatoCore
 api-version: 1.18
 authors: [ yukonisen, dmzz-yyhyy ]
-description: PotatoCore for Spigot
+description: PotatoCore for the UnitedPotato
 softdepend:
   - MiraiMC
 commands:
   ptb:
-    description: "PotatoBot command"
+    description: "PotatoBot main command"
 permissions:
   potato.*:
     description: "PotatoCore permission group"
     default: false
     children:
       potato.admin:
-        description: "PotatoCore admin permission"
+        description: "PotatoCore admin"
         default: op

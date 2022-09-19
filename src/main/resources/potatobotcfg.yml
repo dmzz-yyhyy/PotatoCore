@@ -13,9 +13,10 @@ qqnumber:
 
   # These example qq numbers should be long enough to never be real qq numbers
 
-messages:
+broadcast:
 
   # messages when player join or quit server
-  player:
+  messages:
+    enabled: true
     join: "%player% 连接至服务器"
     quit: "%player% 断开连接"
